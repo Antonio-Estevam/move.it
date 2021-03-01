@@ -1,12 +1,14 @@
 //import { Head } from 'next/document';
+import Head from 'next/head';
+
 import { CompletedChallenges } from '../components/CompleteChallenges';
 import { Countdown } from '../components/Countdown';
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Porfile } from '../components/Profile';
 
-import Head from 'next/head';
 
 import styles from '../styles/pages/Home.module.css';
+import { ChallengeBox } from '../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -25,8 +27,8 @@ export default function Home() {
         <CompletedChallenges/>
         <Countdown/>
       </div>
-
       <div>
+        <ChallengeBox/>
 
       </div>
 
